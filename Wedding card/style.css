@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+.header{
+   min-height: 100vh;
+   width: 100%;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+nav{
+    display: flex;
+    padding: 0% 6%;
+    justify-content: center;
+}
+nav img{
+    height: 40px;
+    width: 100px;
+    margin-top:10px;
+    margin-right: -10px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin: auto;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 3px 42px;
+    position: relative;
+}
+ .link-login{
+   padding-left: 60px;
+  
+}
+.nav-links ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.nav-links ul li a:hover {
+    color: red;
+    transition: 1s;
+}
+nav .fa {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 700px){
+    nav ul{
+        width: 70%;
+        background: red;
+        border-radius: 10px;
+        position: relative;
+        float: right;
+        top: 0px;
+        left: 45px;
+        z-index: 0;
+    }
+    nav ul li a {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .nav-links ul li a{
+        color: white;
+        font-size: 10px;
+    }
+    nav ul li a {
+        color: gray;
+    }
+    nav .fa {
+        display: block;
+    }
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+}
+
+/*----------------------------------------digital card--------------------------------------*/
+
+
+.cta{
+    margin: 74px auto;
+    width: 80%;
+    height: 10vh;
+    background-image: url(images/Background.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .cta h1{
+    color: white;
+    margin-top: -80px;
+    padding: 0;
+    font-size: 45px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  .column {
+    float: left;
+    padding: 10px;
+    height: 300px; 
+  }
+  
+  .left {
+    width: 60%;
+  }
+  
+  .right {
+    width: 40%;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .row{
+    background-color: white;
+    height: 80vh;
+    margin-left: 50px;
+    width: 90%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px; 
+  }
+
+  @media only screen and (max-width: 700px){
+    .cta{
+        margin: 74px auto;
+        width: 80%;
+        height: 10vh;
+        background-image: url(images/Background.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 40px;
+        text-align: center;
+        padding: 100px 0;
+      }
+      .cta h1{
+        color: white;
+        margin-top: -80px;
+        padding: 0;
+        font-size: 45px;
+        font-weight: 600;
+        margin-left: 10px;
+      }
+    
+      * {
+        box-sizing: border-box;
+      }
+      
+      
+      .column {
+        float: left;
+        padding: 10px;
+        height: 300px; 
+      }
+      
+      .left {
+        width: 60%;
+      }
+      
+      .right {
+        width: 40%;
+      }
+      
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      .row{
+        background-color: white;
+        height: 80vh;
+        margin-left: 20px;
+        width: 90%;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px; 
+      }
+
+  }
+
+  /*----------------------------------------slideshow start---------------------------------------*/
+   /*---------------------------------------- start---------------------------------------*/
+
+
+  * {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+  
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+ 
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;   
+    padding: 16px;
+    margin-top: 10px;
+    margin-left: -170px;
+    margin-right: 75px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .mySlides img {
+      width: 50%;
+      height: 60vh;
+      border-radius: 10px;
+      background-size: cover;
+
+  }
+ 
+  
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+ 
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+
+  .add {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+  @media only screen and (max-width: 700px){
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;   
+        padding: 16px;
+        margin-top: 10px;
+        margin-left: -100px;
+        margin-right: -1px;
+        color: black;
+        font-weight: bold;
+        font-size: 10px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+    
+      .mySlides img {
+          width: 70%;
+          height: 50vh;
+          border-radius: 10px;
+          background-size: cover;
+    
+      }
+      .prev:hover, .next:hover {
+        font-size: 10px;
+        color: none;
+      }
+      
+
+  }
+  
+  
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+   /*----------------------------------------slideshow End---------------------------------------*/
+
+  
+
+
+
+
+/*---------------------------------card start-----------------------*/
+
+.card {
+    padding-top: 70px;
+    height: 60vh;
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+  }
+  .card h1 {
+      font-size: 35px;
+      color: black;
+     
+  }
+  
+  .price {
+    color: grey;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .card span {
+      color: lightgreen;
+      font-size: 24px;
+      margin-left: 90px;
+  }
+  .card .para {
+      font-size: 18px;
+      color: gray;
+      margin-top: 50px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 18px;
+    color: white;
+    background-color: #000;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 90%;
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+    background-color: red;
+  }
+
+  @media only screen and (max-width: 700px){
+    
+.card {
+    margin-top: 20px;
+    margin-right: 30px;
+    height: 30vh;
+    max-width: 150px;
+    text-align: center;
+    font-family: arial;
+  }
+  .card h1 {
+      font-size: 35px;
+      color: black;
+     
+  }
+  
+  .price {
+    color: grey;
+    font-size: 13px;
+    margin-top: 30px;
+  }
+  .card span {
+      color: lightgreen;
+      font-size: 13px;
+      margin-left: -5px;
+      margin-top: 10px;
+  }
+  .card .para {
+      font-size: 10px;
+      color: gray;
+      margin-top: 10;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 18px;
+    color: white;
+    background-color: #000;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 90%;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+    background-color: red;
+  }
+
+  }
+   
+  
+ /*----------------------------------------card end---------------------------------------*/
+
+
+ /*---------------------------------------------features-----------------------------*/
+
+
+ .dot-1 {
+    height: 100px;
+    width: 100px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot-2{
+    height: 20px;
+    width: 20px;
+    text-align:center;
+    margin-top: 40%;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+
+  }
+
+  .row-2 {
+      border: 1px solid black;
+      border-radius: 20px;
+      display: flex;
+      width: 80%;
+      margin-left: 130px;
+      margin-bottom: 100px;
+  }
+ 
+ .testimonial-1
+ {
+   padding-top: 150px;
+
+ }
+ .testimonial-1 h1{
+     text-align: center;
+     margin-top: 5px;
+     margin-bottom: 20px;
+
+ }
+ .testimonial-1 .col-3
+ {
+   text-align: center;
+   padding: 40px 0px;
+   box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+   cursor: pointer;
+   transition: transform 0.5s;
+ }
+ 
+ .testimonial-1 .col-3:hover
+ {
+   transform: translateY(-10px);
+ }
+ 
+ .col-3 p
+ {
+   font-size: 20px;
+   padding-right: 50px;
+   padding-left: 50px;
+   margin: 12px 0px;
+   color: #777;
+   font-weight: 800;
+ }
+ .col-3 {
+     margin-left: 50px;
+ }
+
+
+ @media only screen and (max-width: 700px) {
+     
+ .dot-1 {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot-2{
+    height: 10px;
+    width: 10px;
+    text-align:center;
+    margin-top: 40%;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+
+  }
+
+  .row-2 {
+      border: 1px solid black;
+      border-radius: 20px;
+      display: flex;
+      width: 80%;
+      margin-left: 40px;
+      margin-bottom: 100px;
+  }
+ 
+ .testimonial-1
+ {
+   padding-top: 150px;
+
+ }
+ .testimonial-1 h1{
+     text-align: center;
+     margin-top: 5px;
+     margin-bottom: 20px;
+
+ }
+ .testimonial-1 .col-3
+ {
+   text-align: center;
+   padding: 40px 0px;
+   box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+   cursor: pointer;
+   transition: transform 0.5s;
+ }
+ 
+ .testimonial-1 .col-3:hover
+ {
+   transform: translateY(-10px);
+ }
+ 
+ .col-3 p
+ {
+   font-size: 10px;
+   padding-right: 25px;
+   padding-left: 25px;
+   margin: 6px 0px;
+   color: #777;
+   font-weight: 800;
+ }
+ .col-3 {
+     margin-left: 0px;
+ }
+     
+ }
+
+
+ 
+ 
+  
+  
+/*---------------------------------------------fetures---------------------------*/
+  @media screen and (max-width: 768px){
+    .cta {
+      height: 450px;
+    }
+  }
+  
+  
+
+
+   
+   
